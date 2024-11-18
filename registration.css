@@ -1,0 +1,63 @@
+body{ 
+    background-color: beige;
+    background-image: url(image1.jpg);
+    background-position: bottom top;
+}
+.container{
+    background-color: #fff;
+    justify-items: center;
+    height: 400px;
+    opacity: 50%;
+    width: 800px;
+    position: relative;
+    left: 230px;
+    box-shadow: 4rem;
+}
+form input {
+   display: flex;
+   margin: 10px;
+}
+form button{
+    background-color: black;
+    color: #fff;
+    padding: 6px;
+    width: 100px;
+    border-radius: 7px;
+    position: relative;
+    left: 40px;
+    top: 0px;
+}
+form button:hover{
+    background-color:burlywood;
+}
+.container a{
+    text-decoration: none;
+    color: burlywood;
+}
+.container a:visited{
+    color: red;
+}
+.container a:hover{
+    color: aqua;
+}
+.container a:hover:active{
+    color: blue;
+}
+@media (max-width: 700px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: 1070px;
+        position: fixed;
+
+    }
+    .container{
+        top: 150px;
+        left: 40px;
+        width: 300px;
+        height: 400px;
+        align-content: center;
+
+
+    }
+    
+}

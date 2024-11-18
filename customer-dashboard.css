@@ -1,0 +1,68 @@
+.container{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: aliceblue;
+    display: flex;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 17px;
+    font: bold;
+    color: black;
+}
+header ul li a:hover{
+    color: blue;
+}
+main section h1{
+    color: rebeccapurple;
+    position: relative;
+    left: 500px;
+    font-size: 40px;
+}
+main section input{
+    position: relative;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+ ::placeholder{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px;
+    padding-left: 120px;
+    font-size: 20px;
+ }
+ section .carts{
+    flex-basis: calc(50% - 20px);
+    margin-right: 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 20px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+ }
+ section .cart{
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    padding: 10px;
+    padding-top: 20px;
+ }
+ .carts img{
+    height: 200px;
+ }
+   .carts p{
+    font: bold;
+    padding: 0px;
+ }
