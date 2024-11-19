@@ -1,8 +1,11 @@
 .container{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
     padding: 0;
     margin: 0;
+}
+section{
+    scrollbar-width: none;
+    background-color: #9a9a9a;
 }
 header{
     background-color: aliceblue;
@@ -37,32 +40,144 @@ main section input{
     height: 40px;
     border-radius: 20px;
 }
- ::placeholder{
-    color: brown;
+
+section input.search::placeholder{
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px;
     padding-left: 120px;
     font-size: 20px;
+    color: brown;
+ }
+ .section{
+    background-color: azure;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: red 40px;
+ }
+
+ .section h2{
+   padding: 10px;
+    color: red;
+    
+ }
+ section .cart{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 20px;
  }
  section .carts{
     flex-basis: calc(50% - 20px);
     margin-right: 40px;
     margin-bottom: 40px;
     background-color: #fff;
-    box-shadow: 0 20px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 6px rgba(255, 232, 232, 0.1);
     padding: 20px;
+    border-radius: 15px;
+     transition: background 0.5s, transform 0.5s;
  }
- section .cart{
-    display: flex;
-    flex-direction: row;
-    background-color: azure;
-    padding: 10px;
-    padding-top: 20px;
+ 
+ section .carts:hover{
+    transform: translatey(-15px);
  }
  .carts img{
     height: 200px;
+    padding: 15px;
  }
    .carts p{
     font: bold;
     padding: 0px;
+ }
+ .cart2{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 20px;
+ }
+ .section1{
+    background-color: antiquewhite;
+    border-radius: 15px;
+ }
+ .section1 h2{
+    padding: 10px;
+ }
+ .carts p #name{
+    font-size: 15px;
+    color: #f2745f;
+ }
+ /* styling the reservation*/
+ 
+ section.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("images/image1.jpg") center/cover no-repeat;
+    color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+ }
+ .cart-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+ }
+ .cart-img{
+    background: url("images/image3.jpg")center/cover no-repeat;
+   border-radius: 3px;
+ }
+ .banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+ }
+ .cart-content{
+    background: #fff;
+    height: 330px;
+    border-radius: 10px;
+ }
+ .cart-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+ }
+
+ .form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+ }
+ form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: 300;
+
+ }
+ form input[type = text], form input[type = number],
+  form input::placeholder, select{
+    color: #9a9a9a;
+ }
+ form input[type = submit]{
+    color: #fff;
+    background-color: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ @media (max-width:992px){
+    .cart-container{
+        grid-template-columns: 100%;
+    }
+    .cart-img{
+        height: 330px;
+    }
  }
