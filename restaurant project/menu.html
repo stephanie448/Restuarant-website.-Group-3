@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOMEE's Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e6;
+            color: #333;
+            background-image: url('type.jpg');
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #d35400;
+            font-size: 2.5em;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+        }
+        .menu-section h2 {
+            color: #333;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 10px;
+            font-size: 2em;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .item-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .item-name {
+            font-weight: bold;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+        .item-price {
+            color: #d35400;
+            padding: 0 15px 15px;
+            font-size: 1.2em;
+        }
+
+        .order {
+            float: right;
+            margin-top: -100px;
+            margin-right: 150px;
+            font-size: 26px;
+            background-color: #0000003d;
+            color: white;
+            border-radius: 5px; 
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order:hover {
+            background-color: #0056b3; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .menu-item {
+                display: flex;
+                flex-direction: column;
+            }
+            .item-price {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>YOMEE's Menu</h1>
+
+    <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="pic1.jpg" alt="Hamburger" class="item-image">
+                <span class="item-name">Hamburger</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic2.jpg" alt="Fishpie" class="item-image">
+                <span class="item-name">Fishpie</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic3.jpg" alt="Akra" class="item-image">
+                <span class="item-name">Akra</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="pic4.jpg" alt="Jollof Rice" class="item-image">
+                <span class="item-name">Jollof Rice</span>
+                <span class="item-price">3000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic5.jpg" alt="Eru" class="item-image">
+                <span class="item-name">Eru</span>
+                <span class="item-price">2000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic6.jpg" alt="Achu" class="item-image">
+                <span class="item-name">Achu</span>
+                <span class="item-price">3000xaf</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="pic7.jpg" alt="Icecream" class="item-image">
+                <span class="item-name">Icecream</span>
+                <span class="item-price">2000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic8.jpg" alt="Fruit Pie" class="item-image">
+                <span class="item-name">Fruit Pie</span>
+                <span class="item-price">2000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic9.jpg" alt="ChinChin" class="item-image">
+                <span class="item-name">ChinChin</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="pic10.jpg" alt="Fruit Juice" class="item-image">
+                <span class="item-name">Fruit Juice</span>
+                <span class="item-price">2000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic11.jpg" alt="Beer" class="item-image">
+                <span class="item-name">Beer</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+            <div class="menu-item">
+                <img src="pic12.jpg" alt="Soft Drinks" class="item-image">
+                <span class="item-name">Soft Drinks</span>
+                <span class="item-price">1000xaf</span>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="order" title="Place Order" onclick="goToPaymentPage()">Place Order</button>
+
+<script>
+    function goToPaymentPage() {
+        window.location.href = 'payment.html'; // Redirect to the payment page
+    }
+</script>
+
+</body>
+</html>
